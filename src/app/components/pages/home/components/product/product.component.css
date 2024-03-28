@@ -1,0 +1,12 @@
+.image-class {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  width: 300px;
+  margin: 10px;
+}
+

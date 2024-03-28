@@ -1,0 +1,15 @@
+<mat-drawer-container style="height: 100%">
+  <mat-drawer mode="side" [opened]="showDrawer">
+    <app-filters (showCategory)="onShowCategory($event)"></app-filters>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-products-header (columnsCountChange)="onColumnsChange($event)"
+      (showHomeDrawerChange)="onShowDrawerChange($event)">
+    </app-products-header>
+
+    <div class="container-products">
+        <app-product *ngFor="let product of products" [id]="product.id" [name]="product.name" [price]="product.price"></app-product>
+    </div>
+
+  </mat-drawer-content>
+</mat-drawer-container>
