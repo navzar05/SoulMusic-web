@@ -4,6 +4,7 @@ import {MatButton, MatIconButton} from "@angular/material/button";
 import {MatMenu, MatMenuItem, MatMenuTrigger} from "@angular/material/menu";
 import {MatIconModule} from "@angular/material/icon";
 import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
+import {MatCheckbox} from "@angular/material/checkbox";
 
 @Component({
   selector: 'app-products-header',
@@ -18,7 +19,8 @@ import {MatToolbar, MatToolbarModule} from "@angular/material/toolbar";
     MatIconButton,
     MatCardContent,
     MatToolbar,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCheckbox
   ],
   templateUrl: './products-header.component.html',
   styleUrl: './products-header.component.css'

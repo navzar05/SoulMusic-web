@@ -7,12 +7,13 @@
       </button>
 
       <button mat-button [matMenuTriggerFor]="sortByMenu">
-        Sort by {{ sort }}
+        Sort
         <mat-icon>expand_more</mat-icon>
       </button>
       <mat-menu #sortByMenu="matMenu">
-        <button (click)="onSortUpdated('descending')" mat-menu-item>descending</button>
-        <button (click)="onSortUpdated('ascending')" mat-menu-item>ascending</button>
+        <button  mat-menu-item>Descending by price</button>
+        <button  mat-menu-item>Ascending by price</button>
+        <button  mat-menu-item>(A-Z)</button>
       </mat-menu>
     </div>
 <!--    <div class="right-part">-->

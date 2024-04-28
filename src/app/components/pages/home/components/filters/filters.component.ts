@@ -2,6 +2,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 import {MatExpansionModule, MatExpansionPanel, MatExpansionPanelTitle} from "@angular/material/expansion";
 import {MatListOption, MatSelectionList} from "@angular/material/list";
 import {NgFor, NgIf} from "@angular/common";
+import {MatDivider} from "@angular/material/divider";
 
 @Component({
   selector: 'app-filters',
@@ -13,7 +14,8 @@ import {NgFor, NgIf} from "@angular/common";
     MatListOption,
     MatExpansionModule,
     NgIf,
-    NgFor
+    NgFor,
+    MatDivider
   ],
   templateUrl: './filters.component.html',
   styleUrl: './filters.component.css'

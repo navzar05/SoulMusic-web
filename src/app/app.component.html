@@ -4,15 +4,15 @@
     <button mat-icon-button (click)="showSidenav=false">
       <mat-icon>close</mat-icon>
     </button>
-    <mat-tab-group>
-      <mat-tab label="Produse"> Content 1 </mat-tab>
-      <mat-tab label="Servicii"> Content 2 </mat-tab>
-      <mat-tab label="Despre noi"> Content 3 </mat-tab>
-    </mat-tab-group>
+    <div class="button-group">
+      <button mat-button routerLink='home'>Home</button>
+      <button mat-button routerLink='aboutus'>About Us</button>
+      <button mat-button routerLink='gallery'>Gallery</button>
+    </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <app-header [isXSmallScreen]="isXSmallScreen" (emitShowSidenav)="handleShowSidenav()"></app-header>
+    <app-header [isXSmallScreen]="isXSmallScreen" (emitShowSidenav)="handleShowSidenav()" class="header"></app-header>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 
